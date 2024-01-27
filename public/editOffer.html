@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تعديل العرض</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  </head>
+  <body class="text-right">
+    <div class="container mt-5">
+      <h1 class="mb-4 text-center">تعديل العرض</h1>
+      <form id="edit-offer-form" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="title">عنوان العرض:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            name="title"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="description">وصف العرض:</label>
+          <textarea
+            class="form-control"
+            id="description"
+            name="description"
+            required
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="image">صورة العرض:</label>
+          <input type="file" id="image" name="image" accept="image/*" />
+        </div>
+        <div class="form-group">
+          <label for="startDate">تاريخ ووقت البداية:</label>
+          <input
+            type="datetime-local"
+            class="form-control"
+            id="startDate"
+            name="startDate"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="endDate">تاريخ ووقت الانتهاء:</label>
+          <input
+            type="datetime-local"
+            class="form-control"
+            id="endDate"
+            name="endDate"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="discountPercentage">نسبة الخصم:</label>
+          <input
+            type="number"
+            class="form-control"
+            id="discountPercentage"
+            name="discountPercentage"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="category">القسم:</label>
+          <select class="form-control" id="category" name="category" required>
+            <option value="الأدوات المنزلية">الأدوات المنزلية</option>
+            <option value="المفروشات">المفروشات</option>
+            <option value="الملابس">الملابس</option>
+            <option value="النجف والأباجورات">النجف والأباجورات</option>
+            <option value="التحف">التحف</option>
+            <option value="كل الأقسام">كل الأقسام</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary mr-auto ml-auto d-block">
+          حفظ التعديلات
+        </button>
+        <button
+          type="button"
+          id="close-button"
+          class="btn btn-secondary mr-auto ml-auto mt-3 d-block"
+        >
+          إلغاء
+        </button>
+      </form>
+    </div>
+    <script src="/js/editOffer.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>
