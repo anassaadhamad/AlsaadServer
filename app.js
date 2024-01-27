@@ -91,8 +91,8 @@ app.use("/resetPassword/:token", (req, res, next) => {
 });
 app.use(
   "/signup",
-  authController.protect,
-  authController.restrictTo("admin", "cashier"),
+  // authController.protect,
+  // authController.restrictTo("admin", "cashier"),
   (req, res, next) => {
     res.sendFile(`${__dirname}/public/signup.html`);
   }
