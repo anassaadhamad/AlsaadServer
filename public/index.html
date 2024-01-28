@@ -215,20 +215,36 @@
         </div>
       </div>
 
-      <button
-        id="clearAllBtn"
-        style="
-          margin: 10px auto;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-        "
-        class="d-block bg-danger text-white p-2"
-        data-toggle="modal"
-        data-target="#confirmationModal"
-      >
-        حذف الفاتورة
-      </button>
+      <div class="buttons" style="margin: 0px auto; display: flex; gap: 15px">
+        <button
+          id="clearAllBtn"
+          style="
+            margin: 10px auto;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            flex-grow: 1;
+          "
+          class="bg-danger text-white p-2"
+          data-toggle="modal"
+          data-target="#confirmationModal"
+        >
+          حذف الفاتورة
+        </button>
+        <button
+          id="printInvoiceBtn"
+          style="
+            margin: 10px auto;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            flex-grow: 1;
+          "
+          class="bg-success text-white p-2"
+        >
+          طباعة الفاتورة
+        </button>
+      </div>
     </div>
 
     <div id="toggleKeyboardButton" class="keyboard-icon">
@@ -299,7 +315,7 @@
       class="text-center mt-3"
     ></span>
 
-    <footer class="text-center" style="font-weight: bold">
+    <footer class="text-center" style="font-weight: bold; margin-bottom: 10px">
       <span
         >تصميم وبرمجة
         <a
