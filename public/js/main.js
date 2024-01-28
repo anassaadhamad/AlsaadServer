@@ -7,6 +7,7 @@ const notes = document.getElementById("notes");
 const rowTotalPrice = document.getElementById("");
 const addToBasketButton = document.getElementById("addToBasket");
 const clearAllButton = document.getElementById("clearAllBtn");
+const printInvoiceButton = document.getElementById("printInvoiceBtn");
 
 const groupSelect = document.getElementById("groupSelect");
 const codePrefix = document.getElementById("prefix");
@@ -176,6 +177,111 @@ addToBasketButton.addEventListener("click", () => {
 
   // Dispatch the "Enter" key event on the input field
   productCodeInput.dispatchEvent(enterKeyEvent);
+});
+
+// Function to print the invoice
+function printInvoice() {
+  // Open a new window for printing
+  const printWindow = window.open("", "_blank");
+
+  // Write the HTML content for the printable invoice
+  const invoiceContent = `
+    <html>
+      <head>
+        <title>Invoice</title>
+        <style>
+          /* Add any additional styles for the printed invoice here */
+          body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+          }
+          table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+          }
+          th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+          }
+          th {
+            background-color: #f2f2f2;
+          }
+
+          /* Responsive styles for smaller paper sizes */
+          @media print {
+            body {
+              margin: 10px; /* Adjust the margin for smaller paper sizes */
+              font-size: 10pt; /* Adjust the font size for smaller paper sizes */
+            }
+            table {
+              margin-top: 10px; /* Adjust the margin for smaller paper sizes */
+            }
+        </style>
+      </head>
+      <body>
+        <h2>Invoice</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>الكود</th>
+              <th>إسم الصنف</th>
+              <th>سعر البيع</th>
+              <th>الكمية</th>
+              <th>الإجمالي</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${getInvoiceRows()}
+            <tr>
+            <td colspan="4" style="border: 0"></td>
+            <td style="font-weight: bold; font-size: 1.2rem; color: #f00">${
+              document.getElementById("totalPrice").textContent
+            } ج</td></tr>
+          </tbody>
+        </table>
+      </body>
+    </html>
+  `;
+
+  // Write the content to the new window and print it
+  printWindow.document.write(invoiceContent);
+  printWindow.document.close();
+  printWindow.print();
+}
+
+// Function to get HTML rows for the invoice
+function getInvoiceRows() {
+  const rows = historyTable.querySelectorAll("tr");
+  let invoiceRows = "";
+
+  rows.forEach((row) => {
+    const code = row.querySelector("[data-label='الكود']").textContent;
+    const name = row.querySelector("[data-label='إسم الصنف']").textContent;
+    const price = row.querySelector("[data-label='سعر البيع']").textContent;
+    const quantity = row.querySelector(".quantityInput").value;
+    const total = row.querySelector(
+      "[data-label='السعر الإجمالي']"
+    ).textContent;
+
+    invoiceRows += `
+      <tr>
+        <td>${code}</td>
+        <td>${name}</td>
+        <td>${price}</td>
+        <td>${quantity}</td>
+        <td>${total}</td>
+      </tr>
+    `;
+  });
+
+  return invoiceRows;
+}
+
+// Add click event listener to the print invoice button
+document.getElementById("printInvoiceBtn").addEventListener("click", () => {
+  printInvoice();
 });
 
 // Add event listener for showing the tooltip on the warning icon
