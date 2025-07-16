@@ -1,0 +1,284 @@
+@font-face {
+  font-family: "musamim";
+  src: local("hafs"),
+    url("./../webfonts/KFGQPC Uthmanic Script HAFS Regular.otf")
+      format("truetype");
+  src: local("musamim"),
+    url("./../webfonts/18 Khebrat Musamim Regular.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Custom CSS styles */
+.offer-card {
+  margin: 10px;
+}
+
+/* Style for the selected checkmark icon */
+.selected-icon {
+  font-size: 20px; /* Adjust the font size as needed */
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-weight: bold;
+}
+
+/* Style for selected offers */
+.offer-card.selected .selected-icon {
+  display: block; /* Display the checkmark icon when the offer is selected */
+}
+
+body {
+  background-color: #eee;
+  font-family: musamim, "Times New Roman", Times, serif;
+}
+
+.card {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image-container {
+  position: relative;
+}
+
+.thumbnail-image {
+  border-radius: 10px !important;
+}
+
+.discount {
+  background-color: red;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 16px;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.wishlist {
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.first {
+  position: absolute;
+  width: 100%;
+  padding: 9px;
+}
+
+.offer-description {
+  font-size: 18px;
+  /* font-weight: bold; */
+}
+
+.category {
+  font-size: 18px;
+  /* font-weight: bold; */
+  color: #000;
+}
+
+.old-price {
+  font-size: 8px;
+  font-weight: bold;
+  color: grey;
+}
+
+/* .btn {
+  width: 14px; */
+/* height: 14px; */
+/* border-radius: 50%; */
+/* padding: 3px;
+} */
+
+.creme {
+  background-color: #fff;
+  border: 2px solid grey;
+}
+
+.creme:hover {
+  border: 3px solid grey;
+}
+
+.creme:focus {
+  background-color: grey;
+}
+
+.red {
+  background-color: #fff;
+  border: 2px solid red;
+}
+
+.red:hover {
+  border: 3px solid red;
+}
+
+.red:focus {
+  background-color: red;
+}
+
+.blue {
+  background-color: #fff;
+  border: 2px solid #40c4ff;
+}
+
+.blue:hover {
+  border: 3px solid #40c4ff;
+}
+
+.blue:focus {
+  background-color: #40c4ff;
+}
+
+.darkblue {
+  background-color: #fff;
+  border: 2px solid #01579b;
+}
+
+.darkblue:hover {
+  border: 3px solid #01579b;
+}
+
+.darkblue:focus {
+  background-color: #01579b;
+}
+
+.yellow {
+  background-color: #fff;
+  border: 2px solid #ffca28;
+}
+
+.yellow:hover {
+  border-radius: 3px solid #ffca28;
+}
+
+.yellow:focus {
+  background-color: #ffca28;
+}
+
+.item-size {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid grey;
+  color: grey;
+  font-size: 10px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.rating-star {
+  font-size: 10px !important;
+}
+
+.rating-number {
+  font-size: 10px;
+  color: grey;
+}
+
+.buy {
+  font-size: 12px;
+  color: purple;
+  font-weight: 500;
+}
+
+.voutchers {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  width: 190px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+}
+
+.voutcher-divider {
+  display: flex;
+}
+
+.voutcher-left {
+  width: 60%;
+}
+
+.voutcher-name {
+  color: grey;
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.voutcher-code {
+  color: red;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.voutcher-right {
+  width: 40%;
+  background-color: purple;
+  color: #fff;
+}
+
+.discount-percent {
+  font-size: 12px;
+  font-weight: bold;
+  position: relative;
+  top: 5px;
+}
+
+.off {
+  font-size: 14px;
+  position: relative;
+  bottom: 5px;
+}
+
+/* Gradient background for the progress bar */
+.gradient-progress-bar {
+  background: linear-gradient(to left, green 0%, yellow 50%, red 100%);
+  border: none; /* Remove the border for a transparent progress bar */
+}
+
+.p-relative {
+  position: relative;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.progress-bar {
+  position: absolute;
+  transition: width 0.6s ease;
+  background-color: #e9ecef;
+  width: 0%;
+  height: 100%;
+  right: 0%;
+  top: 0;
+}
+
+.col-lg-4 {
+  flex: 0 0 31%;
+  max-width: 31%;
+}
+
+.col-sm-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.col-md-6 {
+  flex: 0 0 47%;
+  max-width: 47%;
+}

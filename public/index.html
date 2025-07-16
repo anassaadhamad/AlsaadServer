@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>بحث الأصناف</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <style>
+      .search-table {
+        direction: rtl;
+      }
+      .search-history {
+        overflow-y: auto;
+      }
+      .inventory,
+      .notes {
+        width: 10%;
+      }
+      .table th,
+      .table td {
+        text-align: center;
+        vertical-align: middle;
+      }
+      #totalPrice {
+        font-weight: bold;
+      }
+      .modal-body {
+        text-align: center;
+      }
+      #clearAllBtn {
+        margin: 10px auto;
+        border: none;
+        border-radius: 5px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body class="w-100 m-0">
+    <main>
+      <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <!-- Logo and Slogan Container -->
+          <div class="navbar-brand">
+            <a href="/"
+              ><img src="images/slogan.png" alt="Logo" height="30"
+            /></a>
+            <!-- <span class="ms-2">مول السعد</span> -->
+          </div>
+          <!-- Login and Signup Container -->
+          <div
+            class="d-flex"
+            style="gap: 1rem; align-items: center; flex-wrap: wrap"
+          >
+            <!-- Placeholder for hello message -->
+            <div id="helloMessage" style="display: none"></div>
+            <!-- Buttons for login and signup -->
+            <a class="signup btn btn-outline-secondary btn-sm" href="/signup"
+              >التسجيل</a
+            >
+            <a class="login btn btn-primary btn-sm me-2" href="/login"
+              >تسجيل الدخول</a
+            >
+            <a
+              class="logout btn btn-danger btn-sm me-2"
+              style="gap: 5px; display: none"
+              href="#"
+            >
+              <span>خروج</span>
+              <i class="fas fa-sign-out-alt"></i>
+            </a>
+
+            <!-- Logout Confirmation Modal -->
+            <div
+              class="modal fade"
+              id="logoutModal"
+              tabindex="-1"
+              aria-labelledby="logoutModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="logoutModalLabel">
+                      تأكيد تسجيل الخروج
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    هل أنت متأكد أنك تريد تسجيل الخروج؟
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      إلغاء
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      id="confirmLogoutBtn"
+                    >
+                      تأكيد
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid w-100 mt-3">
+        <table class="search-table table" style="direction: rtl">
+          <caption class="text-center mb-0">
+            بحث الأصناف
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col" class="search-code">البحث بالكود</th>
+              <th scope="col" class="product-code">الكود</th>
+              <th scope="col" class="product-name">إسم الصنف</th>
+              <th scope="col" class="inventory">المخزون</th>
+              <th scope="col" class="selling-price">سعر البيع</th>
+              <th scope="col" class="price-before-discount">السعر قبل الخصم</th>
+              <th scope="col" class="price-after-discount">السعر بعد الخصم</th>
+              <th scope="col" class="select-category">اختر القسم</th>
+              <th scope="col" class="notes">الملاحظات</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr style="background-color: #fff">
+              <td
+                style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 2px;
+                "
+              >
+                <input
+                  class="form-control"
+                  type="text"
+                  id="productCode"
+                  placeholder="البحث بالكود"
+                  tabindex="-1"
+                />
+                <span
+                  id="prefix"
+                  style="
+                    direction: ltr;
+                    font-weight: bold;
+                    font-size: 20px;
+                    color: #000;
+                  "
+                ></span>
+                <!-- <button
+                  id="addToBasket"
+                  style="
+                    border-radius: 5px;
+                    background-color: #007bff;
+                    border: none;
+                    cursor: pointer;
+                  "
+                  class="basketRow"
+                >
+                  <span
+                    class="btn btn-primary fas fa-cart-plus"
+                    style="
+                      font-size: 14px;
+                      color: #fff;
+                      padding: 5px 10px;
+                      background-color: #007bff;
+                      border-radius: 5px;
+                      cursor: pointer;
+                      border: none;
+                    "
+                  ></span>
+                </button> -->
+              </td>
+
+              <td data-label="الكود" id="productCode2">لا يوجد</td>
+              <td data-label="إسم الصنف" id="productName">لا يوجد</td>
+              <td data-label="المخزون" id="balance" class="inventory">0</td>
+              <td data-label="سعر البيع" id="sellingPrice">
+                0 <span>جنيه</span>
+              </td>
+              <td
+                data-label="السعر قبل الخصم"
+                id="sellingPrice1"
+                style="text-decoration: line-through"
+              >
+                0 <span>جنيه</span>
+              </td>
+              <td data-label="السعر بعد الخصم" id="sellingPrice2">
+                0 <span>جنيه</span>
+              </td>
+              <td data-label="اختر القسم" id="group">
+                <select
+                  class="form-select"
+                  id="groupSelect"
+                  style="max-width: 100%"
+                  tabindex="-1"
+                >
+                  <option value="يدوي" selected>يدوي</option>
+                  <option value="باركود اسكانر">باركود اسكانر</option>
+                  <option value="التحف">التحف</option>
+                  <option value="النجف والأباجورات">النجف والأباجورات</option>
+                  <option value="المفروشات">المفروشات</option>
+                  <option value="الأدوات المنزلية">الأدوات المنزلية</option>
+                  <option value="الملابس">الملابس</option>
+                </select>
+              </td>
+
+              <td data-label="الملاحظات" id="notes" class="notes">لا يوجد</td>
+            </tr>
+            <span id="errorMessage" style="color: red; display: none"></span>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="container-fluid w-100" style="direction: rtl">
+        <div
+          class="search-history table-responsive"
+          style="max-height: 300px; overflow-y: auto"
+        >
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">الكود</th>
+                <th scope="col">الصنف</th>
+                <th scope="col" class="inventory">المخزون</th>
+                <th scope="col">بيع</th>
+                <th scope="col">قبل الخصم</th>
+                <th scope="col">بعد الخصم</th>
+                <th scope="col">الكمية</th>
+                <th scope="col" class="notes">الملاحظات</th>
+                <th scope="col">الإجمالي</th>
+                <th scope="col">حذف</th>
+              </tr>
+            </thead>
+            <tbody id="historyTable">
+              <!-- The search history rows will be added here dynamically -->
+            </tbody>
+          </table>
+        </div>
+
+        <div
+          class="d-flex justify-content-center align-items-center"
+          style="font-size: 0.9em"
+        >
+          <span id="helloText"></span>
+          <div
+            class="text-center mt-2"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="يوجد ملاحظات على بعض الأصناف"
+            id="totalPriceDiv"
+          >
+            إجمالي الفاتورة: <span class="mr-1" id="totalPrice">0</span> جنيه
+          </div>
+        </div>
+
+        <!-- Add an empty modal for confirmation -->
+        <div
+          class="modal fade"
+          id="confirmationModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="confirmationModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="confirmationModalLabel">
+                  تأكيد الحذف
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">هل أنت متأكد أنك تريد حذف الفاتورة؟</div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  إلغاء
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  id="confirmClearInvoice"
+                >
+                  تأكيد الحذف
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="buttons"
+          style="margin: 0px auto; display: flex; gap: 15px; flex-wrap: wrap"
+        >
+          <button
+            id="clearAllBtn"
+            style="
+              margin: 10px auto;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              flex-grow: 1;
+            "
+            class="bg-danger text-white p-2"
+            data-toggle="modal"
+            data-target="#confirmationModal"
+          >
+            <span class="d-none d-lg-inline">حذف الفاتورة</span>
+            <i class="fas fa-trash-alt"></i>
+          </button>
+          <button
+            id="printInvoiceBtn"
+            style="
+              margin: 10px auto;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              flex-grow: 1;
+            "
+            class="bg-primary text-white p-2"
+          >
+            <span class="d-none d-lg-inline">طباعة الفاتورة</span>
+            <i class="fas fa-print"></i>
+          </button>
+          <button
+            id="downloadExcelBtn"
+            style="
+              margin: 10px auto;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              flex-grow: 1;
+            "
+            class="bg-success text-white p-2"
+          >
+            <span class="d-none d-lg-inline">تحميل الفاتورة</span>
+            <i class="fas fa-download"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="toggleKeyboardButton" class="keyboard-icon">
+        <i class="fas fa-keyboard"></i>
+      </div>
+
+      <div id="keyboard" class="custom-keyboard">
+        <div class="keyboard-row">
+          <div class="key" data-key="a">a</div>
+          <div class="key" data-key="b">b</div>
+          <div class="key" data-key="c">c</div>
+          <div class="key" data-key="e">e</div>
+          <div class="key" data-key="g">g</div>
+          <div class="key" data-key="-">-</div>
+        </div>
+        <div class="keyboard-row">
+          <div class="key" data-key="1">1</div>
+          <div class="key" data-key="2">2</div>
+          <div class="key" data-key="3">3</div>
+          <div class="key" data-key="4">4</div>
+          <div class="key" data-key="5">5</div>
+          <div class="key" data-key="6">6</div>
+          <div class="key" data-key="7">7</div>
+          <div class="key" data-key="8">8</div>
+          <div class="key" data-key="9">9</div>
+          <div class="key" data-key="0">0</div>
+        </div>
+        <div class="keyboard-row">
+          <div class="key action" data-action="deleteLastCharacter">&larr;</div>
+          <div class="key action" data-action="clearInputField">Clear</div>
+          <div class="key action" data-action="enter">Enter</div>
+        </div>
+      </div>
+
+      <div
+        class="forms"
+        style="
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          flex-direction: row-reverse;
+          flex-wrap: wrap;
+        "
+      >
+        <form
+          action="api/v1/products/uploadAndConvertProducts"
+          method="post"
+          enctype="multipart/form-data"
+          style="display: none"
+        >
+          <input type="file" name="file" id="file" hidden />
+          <label for="file" id="fileLabel" class="bg-danger text-center"
+            >حذف قاعدة البيانات</label
+          >
+        </form>
+        <form
+          action="api/v1/products/importJsonData"
+          method="post"
+          enctype="multipart/form-data"
+          style="display: none"
+        >
+          <input type="file" name="file2" id="file2" hidden />
+          <label for="file2" id="fileLabel2" class="bg-success text-center"
+            >إضافة قاعدة البيانات</label
+          >
+        </form>
+      </div>
+      <span
+        id="uploadMessage"
+        style="display: block; text-align: center; margin-top: 10px"
+      ></span>
+      <span
+        id="uploadMessage"
+        style="display: none"
+        class="text-center mt-3"
+      ></span>
+    </main>
+    <footer class="text-center" style="font-weight: bold; font-size: 0.8em">
+      <span
+        >&copy;تصميم وبرمجة
+        <a
+          href="https://facebook.com/anassaadhamad"
+          target="_blank"
+          class="text-danger"
+          >أنس حمد</a
+        ></span
+      >
+    </footer>
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/keyboard.js"></script>
+    <script src="/js/historyTable.js"></script>
+    <script src="/js/handleUpload.js"></script>
+    <script src="/js/logout.js"></script>
+    <script src="/js/popper.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/all.min.js"></script>
+  </body>
+</html>

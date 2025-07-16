@@ -1,0 +1,894 @@
+2023-10-01 02:31:46 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-01 02:31:46 - Started 20064
+2023-10-01 02:34:15 - Stopping alsaadapp.exe
+2023-10-01 02:34:15 - ProcessKill 20064
+2023-10-01 02:34:15 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-10-01 02:34:59 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-01 02:34:59 - Started 7020
+2023-10-01 02:49:41 - Stopping alsaadapp.exe
+2023-10-01 02:49:41 - ProcessKill 7020
+2023-10-01 02:49:41 - Found child process: 7032 Name: conhost.exe
+2023-10-01 02:49:41 - Found child process: 7652 Name: node.exe
+2023-10-01 02:49:41 - Stopping process 7032
+2023-10-01 02:49:41 - Send SIGINT 7032
+2023-10-01 02:49:41 - SIGINT to 7032 failed - Killing as fallback
+2023-10-01 02:49:41 - Stopping process 7652
+2023-10-01 02:49:41 - Send SIGINT 7652
+2023-10-01 02:49:41 - SIGINT to 7652 failed - Killing as fallback
+2023-10-01 02:49:41 - Stopping process 7020
+2023-10-01 02:49:41 - Send SIGINT 7020
+2023-10-01 02:49:41 - SIGINT to 7020 failed - Killing as fallback
+2023-10-01 02:49:41 - Finished alsaadapp.exe
+2023-10-01 18:45:28 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-01 18:45:28 - Started 18500
+2023-10-02 04:37:54 - Stopping alsaadapp.exe
+2023-10-02 04:37:54 - ProcessKill 18500
+2023-10-02 04:37:54 - Found child process: 12504 Name: conhost.exe
+2023-10-02 04:37:54 - Found child process: 12716 Name: node.exe
+2023-10-02 04:37:54 - Stopping process 12504
+2023-10-02 04:37:54 - Send SIGINT 12504
+2023-10-02 04:37:54 - SIGINT to 12504 failed - Killing as fallback
+2023-10-02 04:37:55 - Stopping process 12716
+2023-10-02 04:37:55 - Send SIGINT 12716
+2023-10-02 04:37:55 - SIGINT to 12716 failed - Killing as fallback
+2023-10-02 04:37:55 - Stopping process 18500
+2023-10-02 04:37:55 - Send SIGINT 18500
+2023-10-02 04:37:55 - SIGINT to 18500 failed - Killing as fallback
+2023-10-02 04:37:55 - Finished alsaadapp.exe
+2023-10-02 04:37:55 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-02 04:37:55 - Started 188
+2023-10-02 04:44:31 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-02 04:44:31 - Started 11792
+2023-10-02 04:57:24 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-02 04:57:24 - Started 25016
+2023-10-02 05:34:25 - Stopping alsaadapp.exe
+2023-10-02 05:34:25 - ProcessKill 25016
+2023-10-02 05:34:26 - Found child process: 10100 Name: conhost.exe
+2023-10-02 05:34:26 - Found child process: 6612 Name: node.exe
+2023-10-02 05:34:26 - Stopping process 10100
+2023-10-02 05:34:26 - Send SIGINT 10100
+2023-10-02 05:34:26 - SIGINT to 10100 failed - Killing as fallback
+2023-10-02 05:34:26 - Stopping process 6612
+2023-10-02 05:34:26 - Send SIGINT 6612
+2023-10-02 05:34:26 - SIGINT to 6612 failed - Killing as fallback
+2023-10-02 05:34:26 - Stopping process 25016
+2023-10-02 05:34:26 - Send SIGINT 25016
+2023-10-02 05:34:26 - SIGINT to 25016 failed - Killing as fallback
+2023-10-02 05:34:26 - Finished alsaadapp.exe
+2023-10-02 05:34:27 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-02 05:34:27 - Started 18884
+2023-10-02 05:36:39 - Stopping alsaadapp.exe
+2023-10-02 05:36:39 - ProcessKill 18884
+2023-10-02 05:36:39 - Found child process: 15340 Name: conhost.exe
+2023-10-02 05:36:39 - Found child process: 16524 Name: node.exe
+2023-10-02 05:36:40 - Stopping process 15340
+2023-10-02 05:36:40 - Send SIGINT 15340
+2023-10-02 05:36:40 - SIGINT to 15340 failed - Killing as fallback
+2023-10-02 05:36:40 - Stopping process 16524
+2023-10-02 05:36:40 - Send SIGINT 16524
+2023-10-02 05:36:40 - SIGINT to 16524 failed - Killing as fallback
+2023-10-02 05:36:40 - Stopping process 18884
+2023-10-02 05:36:40 - Send SIGINT 18884
+2023-10-02 05:36:40 - SIGINT to 18884 failed - Killing as fallback
+2023-10-02 05:36:40 - Finished alsaadapp.exe
+2023-10-02 05:36:41 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-02 05:36:41 - Started 144
+2023-10-02 05:39:39 - Stopping alsaadapp.exe
+2023-10-02 05:39:39 - ProcessKill 144
+2023-10-02 05:39:39 - Found child process: 24604 Name: conhost.exe
+2023-10-02 05:39:39 - Found child process: 17880 Name: node.exe
+2023-10-02 05:39:39 - Stopping process 24604
+2023-10-02 05:39:39 - Send SIGINT 24604
+2023-10-02 05:39:39 - SIGINT to 24604 failed - Killing as fallback
+2023-10-02 05:39:39 - Stopping process 17880
+2023-10-02 05:39:39 - Send SIGINT 17880
+2023-10-02 05:39:39 - SIGINT to 17880 failed - Killing as fallback
+2023-10-02 05:39:39 - Stopping process 144
+2023-10-02 05:39:39 - Send SIGINT 144
+2023-10-02 05:39:39 - SIGINT to 144 failed - Killing as fallback
+2023-10-02 05:39:39 - Finished alsaadapp.exe
+2023-10-02 05:39:40 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-02 05:39:40 - Started 4084
+2023-10-02 05:40:38 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-02 05:40:38 - Started 21800
+2023-10-02 05:50:49 - Stopping alsaadapp.exe
+2023-10-02 05:50:49 - ProcessKill 21800
+2023-10-02 05:50:49 - Found child process: 18296 Name: conhost.exe
+2023-10-02 05:50:49 - Found child process: 11456 Name: node.exe
+2023-10-02 05:50:49 - Stopping process 18296
+2023-10-02 05:50:49 - Send SIGINT 18296
+2023-10-02 05:50:49 - SIGINT to 18296 failed - Killing as fallback
+2023-10-02 05:50:49 - Stopping process 11456
+2023-10-02 05:50:49 - Send SIGINT 11456
+2023-10-02 05:50:49 - SIGINT to 11456 failed - Killing as fallback
+2023-10-02 05:50:49 - Stopping process 21800
+2023-10-02 05:50:49 - Send SIGINT 21800
+2023-10-02 05:50:49 - SIGINT to 21800 failed - Killing as fallback
+2023-10-02 05:50:49 - Finished alsaadapp.exe
+2023-10-02 05:50:50 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-02 05:50:50 - Started 21668
+2023-10-02 05:53:35 - Stopping alsaadapp.exe
+2023-10-02 05:53:35 - ProcessKill 21668
+2023-10-02 05:53:35 - Found child process: 13448 Name: conhost.exe
+2023-10-02 05:53:35 - Found child process: 24196 Name: node.exe
+2023-10-02 05:53:35 - Stopping process 13448
+2023-10-02 05:53:35 - Send SIGINT 13448
+2023-10-02 05:53:35 - SIGINT to 13448 failed - Killing as fallback
+2023-10-02 05:53:35 - Stopping process 24196
+2023-10-02 05:53:35 - Send SIGINT 24196
+2023-10-02 05:53:35 - SIGINT to 24196 failed - Killing as fallback
+2023-10-02 05:53:35 - Stopping process 21668
+2023-10-02 05:53:35 - Send SIGINT 21668
+2023-10-02 05:53:35 - SIGINT to 21668 failed - Killing as fallback
+2023-10-02 05:53:35 - Finished alsaadapp.exe
+2023-10-02 05:53:36 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-02 05:53:36 - Started 23208
+2023-10-02 05:54:33 - Stopping alsaadapp.exe
+2023-10-02 05:54:33 - ProcessKill 23208
+2023-10-02 05:54:33 - Found child process: 2680 Name: conhost.exe
+2023-10-02 05:54:33 - Found child process: 7180 Name: node.exe
+2023-10-02 05:54:33 - Stopping process 2680
+2023-10-02 05:54:33 - Send SIGINT 2680
+2023-10-02 05:54:33 - SIGINT to 2680 failed - Killing as fallback
+2023-10-02 05:54:33 - Stopping process 7180
+2023-10-02 05:54:33 - Send SIGINT 7180
+2023-10-02 05:54:33 - SIGINT to 7180 failed - Killing as fallback
+2023-10-02 05:54:33 - Stopping process 23208
+2023-10-02 05:54:33 - Send SIGINT 23208
+2023-10-02 05:54:33 - SIGINT to 23208 failed - Killing as fallback
+2023-10-02 05:54:33 - Finished alsaadapp.exe
+2023-10-02 05:54:35 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-02 05:54:35 - Started 11696
+2023-10-02 05:58:42 - Stopping alsaadapp.exe
+2023-10-02 05:58:42 - ProcessKill 11696
+2023-10-02 05:58:42 - Found child process: 22736 Name: conhost.exe
+2023-10-02 05:58:42 - Found child process: 25260 Name: node.exe
+2023-10-02 05:58:42 - Stopping process 22736
+2023-10-02 05:58:42 - Send SIGINT 22736
+2023-10-02 05:58:42 - SIGINT to 22736 failed - Killing as fallback
+2023-10-02 05:58:42 - Stopping process 25260
+2023-10-02 05:58:42 - Send SIGINT 25260
+2023-10-02 05:58:42 - SIGINT to 25260 failed - Killing as fallback
+2023-10-02 05:58:42 - Stopping process 11696
+2023-10-02 05:58:42 - Send SIGINT 11696
+2023-10-02 05:58:42 - SIGINT to 11696 failed - Killing as fallback
+2023-10-02 05:58:42 - Finished alsaadapp.exe
+2023-10-02 05:58:43 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-02 05:58:43 - Started 20724
+2023-10-02 06:02:27 - Stopping alsaadapp.exe
+2023-10-02 06:02:27 - ProcessKill 20724
+2023-10-02 06:02:27 - Found child process: 25288 Name: conhost.exe
+2023-10-02 06:02:27 - Found child process: 24488 Name: node.exe
+2023-10-02 06:02:27 - Stopping process 25288
+2023-10-02 06:02:27 - Send SIGINT 25288
+2023-10-02 06:02:27 - SIGINT to 25288 failed - Killing as fallback
+2023-10-02 06:02:27 - Stopping process 24488
+2023-10-02 06:02:27 - Send SIGINT 24488
+2023-10-02 06:02:27 - SIGINT to 24488 failed - Killing as fallback
+2023-10-02 06:02:27 - Stopping process 20724
+2023-10-02 06:02:27 - Send SIGINT 20724
+2023-10-02 06:02:27 - SIGINT to 20724 failed - Killing as fallback
+2023-10-02 06:02:27 - Finished alsaadapp.exe
+2023-10-02 06:02:29 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-02 06:02:29 - Started 24100
+2023-10-02 06:03:13 - Stopping alsaadapp.exe
+2023-10-02 06:03:13 - ProcessKill 24100
+2023-10-02 06:03:13 - Found child process: 26132 Name: conhost.exe
+2023-10-02 06:03:13 - Found child process: 17192 Name: node.exe
+2023-10-02 06:03:13 - Stopping process 26132
+2023-10-02 06:03:13 - Send SIGINT 26132
+2023-10-02 06:03:13 - SIGINT to 26132 failed - Killing as fallback
+2023-10-02 06:03:13 - Stopping process 17192
+2023-10-02 06:03:13 - Send SIGINT 17192
+2023-10-02 06:03:13 - SIGINT to 17192 failed - Killing as fallback
+2023-10-02 06:03:13 - Stopping process 24100
+2023-10-02 06:03:13 - Send SIGINT 24100
+2023-10-02 06:03:13 - SIGINT to 24100 failed - Killing as fallback
+2023-10-02 06:03:13 - Finished alsaadapp.exe
+2023-10-02 06:26:45 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-02 06:26:45 - Started 15600
+2023-10-02 06:34:42 - Stopping alsaadapp.exe
+2023-10-02 06:34:42 - ProcessKill 15600
+2023-10-02 06:34:42 - Found child process: 8452 Name: conhost.exe
+2023-10-02 06:34:42 - Found child process: 10152 Name: node.exe
+2023-10-02 06:34:42 - Stopping process 8452
+2023-10-02 06:34:42 - Send SIGINT 8452
+2023-10-02 06:34:42 - SIGINT to 8452 failed - Killing as fallback
+2023-10-02 06:34:42 - Stopping process 10152
+2023-10-02 06:34:42 - Send SIGINT 10152
+2023-10-02 06:34:42 - SIGINT to 10152 failed - Killing as fallback
+2023-10-02 06:34:42 - Stopping process 15600
+2023-10-02 06:34:42 - Send SIGINT 15600
+2023-10-02 06:34:42 - SIGINT to 15600 failed - Killing as fallback
+2023-10-02 06:34:42 - Finished alsaadapp.exe
+2023-10-02 06:43:32 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-02 06:43:32 - Started 24860
+2023-10-02 06:44:25 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-02 06:44:25 - Started 19480
+2023-10-02 07:36:05 - Stopping alsaadapp.exe
+2023-10-02 07:36:05 - ProcessKill 19480
+2023-10-02 07:36:06 - Found child process: 24964 Name: conhost.exe
+2023-10-02 07:36:06 - Found child process: 25964 Name: node.exe
+2023-10-02 07:36:06 - Stopping process 24964
+2023-10-02 07:36:06 - Send SIGINT 24964
+2023-10-02 07:36:06 - SIGINT to 24964 failed - Killing as fallback
+2023-10-02 07:36:06 - Stopping process 25964
+2023-10-02 07:36:06 - Send SIGINT 25964
+2023-10-02 07:36:06 - SIGINT to 25964 failed - Killing as fallback
+2023-10-02 07:36:06 - Stopping process 19480
+2023-10-02 07:36:06 - Send SIGINT 19480
+2023-10-02 07:36:06 - SIGINT to 19480 failed - Killing as fallback
+2023-10-02 07:36:06 - Finished alsaadapp.exe
+2023-10-02 11:27:57 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-02 11:27:57 - Started 22624
+2023-10-02 11:28:25 - Stopping alsaadapp.exe
+2023-10-02 11:28:25 - ProcessKill 22624
+2023-10-02 11:28:26 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-10-02 11:29:14 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-02 11:29:14 - Started 7124
+2023-10-02 13:23:15 - Stopping alsaadapp.exe
+2023-10-02 13:23:15 - ProcessKill 7124
+2023-10-02 13:23:15 - Found child process: 7136 Name: conhost.exe
+2023-10-02 13:23:15 - Found child process: 6288 Name: node.exe
+2023-10-02 13:23:15 - Stopping process 7136
+2023-10-02 13:23:15 - Send SIGINT 7136
+2023-10-02 13:23:15 - SIGINT to 7136 failed - Killing as fallback
+2023-10-02 13:23:15 - Stopping process 6288
+2023-10-02 13:23:15 - Send SIGINT 6288
+2023-10-02 13:23:15 - SIGINT to 6288 failed - Killing as fallback
+2023-10-02 13:23:15 - Stopping process 7124
+2023-10-02 13:23:15 - Send SIGINT 7124
+2023-10-02 13:23:15 - SIGINT to 7124 failed - Killing as fallback
+2023-10-02 13:23:15 - Finished alsaadapp.exe
+2023-10-06 05:12:57 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-06 05:12:57 - Started 32716
+2023-10-06 05:28:08 - Stopping alsaadapp.exe
+2023-10-06 05:28:09 - ProcessKill 32716
+2023-10-06 05:28:09 - Found child process: 6924 Name: conhost.exe
+2023-10-06 05:28:09 - Found child process: 17696 Name: node.exe
+2023-10-06 05:28:09 - Stopping process 6924
+2023-10-06 05:28:09 - Send SIGINT 6924
+2023-10-06 05:28:09 - SIGINT to 6924 failed - Killing as fallback
+2023-10-06 05:28:09 - Stopping process 17696
+2023-10-06 05:28:09 - Send SIGINT 17696
+2023-10-06 05:28:09 - SIGINT to 17696 failed - Killing as fallback
+2023-10-06 05:28:09 - Stopping process 32716
+2023-10-06 05:28:09 - Send SIGINT 32716
+2023-10-06 05:28:09 - SIGINT to 32716 failed - Killing as fallback
+2023-10-06 05:28:09 - Finished alsaadapp.exe
+2023-10-06 05:28:10 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-06 05:28:10 - Started 16460
+2023-10-06 05:34:13 - Stopping alsaadapp.exe
+2023-10-06 05:34:13 - ProcessKill 16460
+2023-10-06 05:34:13 - Found child process: 8788 Name: conhost.exe
+2023-10-06 05:34:13 - Found child process: 7648 Name: node.exe
+2023-10-06 05:34:13 - Stopping process 8788
+2023-10-06 05:34:13 - Send SIGINT 8788
+2023-10-06 05:34:13 - SIGINT to 8788 failed - Killing as fallback
+2023-10-06 05:34:14 - Stopping process 7648
+2023-10-06 05:34:14 - Send SIGINT 7648
+2023-10-06 05:34:14 - SIGINT to 7648 failed - Killing as fallback
+2023-10-06 05:34:14 - Stopping process 16460
+2023-10-06 05:34:14 - Send SIGINT 16460
+2023-10-06 05:34:14 - SIGINT to 16460 failed - Killing as fallback
+2023-10-06 05:34:14 - Finished alsaadapp.exe
+2023-10-06 05:34:14 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-06 05:34:14 - Started 19372
+2023-10-06 10:02:45 - Stopping alsaadapp.exe
+2023-10-06 10:02:45 - ProcessKill 19372
+2023-10-06 10:02:45 - Found child process: 25916 Name: conhost.exe
+2023-10-06 10:02:45 - Found child process: 15712 Name: node.exe
+2023-10-06 10:02:45 - Stopping process 25916
+2023-10-06 10:02:45 - Send SIGINT 25916
+2023-10-06 10:02:45 - SIGINT to 25916 failed - Killing as fallback
+2023-10-06 10:02:45 - Stopping process 15712
+2023-10-06 10:02:45 - Send SIGINT 15712
+2023-10-06 10:02:45 - SIGINT to 15712 failed - Killing as fallback
+2023-10-06 10:02:45 - Stopping process 19372
+2023-10-06 10:02:45 - Send SIGINT 19372
+2023-10-06 10:02:45 - SIGINT to 19372 failed - Killing as fallback
+2023-10-06 10:02:45 - Finished alsaadapp.exe
+2023-10-06 10:03:50 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-06 10:03:50 - Started 14628
+2023-10-06 10:50:20 - Stopping alsaadapp.exe
+2023-10-06 10:50:20 - ProcessKill 14628
+2023-10-06 10:50:20 - Found child process: 5680 Name: conhost.exe
+2023-10-06 10:50:20 - Found child process: 19208 Name: node.exe
+2023-10-06 10:50:20 - Stopping process 5680
+2023-10-06 10:50:20 - Send SIGINT 5680
+2023-10-06 10:50:20 - SIGINT to 5680 failed - Killing as fallback
+2023-10-06 10:50:20 - Stopping process 19208
+2023-10-06 10:50:20 - Send SIGINT 19208
+2023-10-06 10:50:20 - SIGINT to 19208 failed - Killing as fallback
+2023-10-06 10:50:20 - Stopping process 14628
+2023-10-06 10:50:21 - Send SIGINT 14628
+2023-10-06 10:50:21 - SIGINT to 14628 failed - Killing as fallback
+2023-10-06 10:50:21 - Finished alsaadapp.exe
+2023-10-06 11:20:06 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-06 11:20:06 - Started 25952
+2023-10-06 12:01:40 - Stopping alsaadapp.exe
+2023-10-06 12:01:41 - ProcessKill 25952
+2023-10-06 12:01:41 - Found child process: 34340 Name: conhost.exe
+2023-10-06 12:01:41 - Found child process: 33988 Name: node.exe
+2023-10-06 12:01:41 - Stopping process 34340
+2023-10-06 12:01:41 - Send SIGINT 34340
+2023-10-06 12:01:41 - SIGINT to 34340 failed - Killing as fallback
+2023-10-06 12:01:41 - Stopping process 33988
+2023-10-06 12:01:41 - Send SIGINT 33988
+2023-10-06 12:01:41 - SIGINT to 33988 failed - Killing as fallback
+2023-10-06 12:01:41 - Stopping process 25952
+2023-10-06 12:01:41 - Send SIGINT 25952
+2023-10-06 12:01:41 - SIGINT to 25952 failed - Killing as fallback
+2023-10-06 12:01:41 - Finished alsaadapp.exe
+2023-10-06 16:51:55 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-06 16:51:55 - Started 7044
+2023-10-06 23:00:07 - Stopping alsaadapp.exe
+2023-10-06 23:00:07 - ProcessKill 7044
+2023-10-06 23:00:07 - Found child process: 7068 Name: conhost.exe
+2023-10-06 23:00:07 - Found child process: 6860 Name: node.exe
+2023-10-06 23:00:07 - Stopping process 7068
+2023-10-06 23:00:07 - Send SIGINT 7068
+2023-10-06 23:00:07 - SIGINT to 7068 failed - Killing as fallback
+2023-10-06 23:00:07 - Stopping process 6860
+2023-10-06 23:00:07 - Send SIGINT 6860
+2023-10-06 23:00:07 - SIGINT to 6860 failed - Killing as fallback
+2023-10-06 23:00:07 - Stopping process 7044
+2023-10-06 23:00:07 - Send SIGINT 7044
+2023-10-06 23:00:07 - SIGINT to 7044 failed - Killing as fallback
+2023-10-06 23:00:07 - Finished alsaadapp.exe
+2023-10-07 21:46:08 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-07 21:46:08 - Started 6996
+2023-10-07 21:55:02 - Stopping alsaadapp.exe
+2023-10-07 21:55:02 - ProcessKill 6996
+2023-10-07 21:55:02 - Found child process: 7008 Name: conhost.exe
+2023-10-07 21:55:02 - Found child process: 7700 Name: node.exe
+2023-10-07 21:55:02 - Stopping process 7008
+2023-10-07 21:55:02 - Send SIGINT 7008
+2023-10-07 21:55:02 - SIGINT to 7008 failed - Killing as fallback
+2023-10-07 21:55:02 - Stopping process 7700
+2023-10-07 21:55:02 - Send SIGINT 7700
+2023-10-07 21:55:02 - SIGINT to 7700 failed - Killing as fallback
+2023-10-07 21:55:02 - Stopping process 6996
+2023-10-07 21:55:02 - Send SIGINT 6996
+2023-10-07 21:55:02 - SIGINT to 6996 failed - Killing as fallback
+2023-10-07 21:55:02 - Finished alsaadapp.exe
+2023-10-07 22:23:36 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-07 22:23:37 - Started 6344
+2023-10-07 22:24:38 - Stopping alsaadapp.exe
+2023-10-07 22:24:38 - ProcessKill 6344
+2023-10-07 22:24:38 - Found child process: 6356 Name: conhost.exe
+2023-10-07 22:24:38 - Found child process: 7036 Name: node.exe
+2023-10-07 22:24:38 - Stopping process 6356
+2023-10-07 22:24:38 - Send SIGINT 6356
+2023-10-07 22:24:38 - SIGINT to 6356 failed - Killing as fallback
+2023-10-07 22:24:38 - Stopping process 7036
+2023-10-07 22:24:38 - Send SIGINT 7036
+2023-10-07 22:24:38 - SIGINT to 7036 failed - Killing as fallback
+2023-10-07 22:24:38 - Stopping process 6344
+2023-10-07 22:24:38 - Send SIGINT 6344
+2023-10-07 22:24:38 - SIGINT to 6344 failed - Killing as fallback
+2023-10-07 22:24:38 - Finished alsaadapp.exe
+2023-10-10 14:28:46 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-10 14:28:46 - Started 7044
+2023-10-10 16:56:16 - Stopping alsaadapp.exe
+2023-10-10 16:56:16 - ProcessKill 7044
+2023-10-10 16:56:16 - Found child process: 7072 Name: conhost.exe
+2023-10-10 16:56:16 - Found child process: 7972 Name: node.exe
+2023-10-10 16:56:16 - Stopping process 7072
+2023-10-10 16:56:16 - Send SIGINT 7072
+2023-10-10 16:56:16 - SIGINT to 7072 failed - Killing as fallback
+2023-10-10 16:56:16 - Stopping process 7972
+2023-10-10 16:56:16 - Send SIGINT 7972
+2023-10-10 16:56:16 - SIGINT to 7972 failed - Killing as fallback
+2023-10-10 16:56:16 - Stopping process 7044
+2023-10-10 16:56:16 - Send SIGINT 7044
+2023-10-10 16:56:16 - SIGINT to 7044 failed - Killing as fallback
+2023-10-10 16:56:16 - Finished alsaadapp.exe
+2023-10-10 22:10:52 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-10 22:10:52 - Started 6660
+2023-11-08 20:55:56 - Stopping alsaadapp.exe
+2023-11-08 20:55:56 - ProcessKill 6660
+2023-11-08 20:55:56 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-11-08 20:56:52 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-08 20:56:52 - Started 6304
+2023-11-08 20:58:46 - Stopping alsaadapp.exe
+2023-11-08 20:58:46 - ProcessKill 6304
+2023-11-08 20:58:46 - Found child process: 6316 Name: conhost.exe
+2023-11-08 20:58:46 - Found child process: 6836 Name: node.exe
+2023-11-08 20:58:46 - Stopping process 6316
+2023-11-08 20:58:46 - Send SIGINT 6316
+2023-11-08 20:58:46 - SIGINT to 6316 failed - Killing as fallback
+2023-11-08 20:58:46 - Stopping process 6836
+2023-11-08 20:58:46 - Send SIGINT 6836
+2023-11-08 20:58:46 - SIGINT to 6836 failed - Killing as fallback
+2023-11-08 20:58:46 - Stopping process 6304
+2023-11-08 20:58:46 - Send SIGINT 6304
+2023-11-08 20:58:46 - SIGINT to 6304 failed - Killing as fallback
+2023-11-08 20:58:46 - Finished alsaadapp.exe
+2023-11-09 10:50:34 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-09 10:50:34 - Started 6788
+2023-11-09 15:25:51 - Stopping alsaadapp.exe
+2023-11-09 15:25:51 - ProcessKill 6788
+2023-11-09 15:25:52 - Found child process: 6800 Name: conhost.exe
+2023-11-09 15:25:52 - Found child process: 6636 Name: node.exe
+2023-11-09 15:25:52 - Stopping process 6800
+2023-11-09 15:25:52 - Send SIGINT 6800
+2023-11-09 15:25:52 - SIGINT to 6800 failed - Killing as fallback
+2023-11-09 15:25:52 - Stopping process 6636
+2023-11-09 15:25:52 - Send SIGINT 6636
+2023-11-09 15:25:52 - SIGINT to 6636 failed - Killing as fallback
+2023-11-09 15:25:52 - Stopping process 6788
+2023-11-09 15:25:52 - Send SIGINT 6788
+2023-11-09 15:25:52 - SIGINT to 6788 failed - Killing as fallback
+2023-11-09 15:25:52 - Finished alsaadapp.exe
+2023-11-10 13:05:24 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-10 13:05:24 - Started 6708
+2023-11-11 15:29:11 - Stopping alsaadapp.exe
+2023-11-11 15:29:11 - ProcessKill 6708
+2023-11-11 15:29:12 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-11-11 15:31:07 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-11 15:31:07 - Started 6480
+2023-11-11 15:41:35 - Stopping alsaadapp.exe
+2023-11-11 15:41:35 - ProcessKill 6480
+2023-11-11 15:41:35 - Found child process: 6496 Name: conhost.exe
+2023-11-11 15:41:35 - Found child process: 4180 Name: node.exe
+2023-11-11 15:41:35 - Stopping process 6496
+2023-11-11 15:41:35 - Send SIGINT 6496
+2023-11-11 15:41:35 - SIGINT to 6496 failed - Killing as fallback
+2023-11-11 15:41:35 - Stopping process 4180
+2023-11-11 15:41:35 - Send SIGINT 4180
+2023-11-11 15:41:35 - SIGINT to 4180 failed - Killing as fallback
+2023-11-11 15:41:35 - Stopping process 6480
+2023-11-11 15:41:35 - Send SIGINT 6480
+2023-11-11 15:41:35 - SIGINT to 6480 failed - Killing as fallback
+2023-11-11 15:41:35 - Finished alsaadapp.exe
+2023-11-16 20:14:10 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-16 20:14:11 - Started 6900
+2023-11-17 01:45:45 - Stopping alsaadapp.exe
+2023-11-17 01:45:45 - ProcessKill 6900
+2023-11-17 01:45:45 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-11-17 01:46:30 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-17 01:46:30 - Started 6868
+2023-11-17 01:47:08 - Stopping alsaadapp.exe
+2023-11-17 01:47:08 - ProcessKill 6868
+2023-11-17 01:47:08 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-12-19 13:31:51 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-19 13:31:51 - Started 7124
+2023-12-19 14:35:59 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-19 14:35:59 - Started 6700
+2023-12-21 00:18:00 - Stopping alsaadapp.exe
+2023-12-21 00:18:00 - ProcessKill 6700
+2023-12-21 00:18:00 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-12-21 00:18:57 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-21 00:18:57 - Started 6368
+2023-12-21 00:20:06 - Stopping alsaadapp.exe
+2023-12-21 00:20:06 - ProcessKill 6368
+2023-12-21 00:20:06 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-01-23 13:19:35 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-23 13:19:35 - Started 6792
+2024-01-23 16:58:09 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-23 16:58:09 - Started 6804
+2024-01-23 19:49:18 - Stopping alsaadapp.exe
+2024-01-23 19:49:19 - ProcessKill 6804
+2024-01-23 19:49:19 - Found child process: 6816 Name: conhost.exe
+2024-01-23 19:49:19 - Found child process: 6584 Name: node.exe
+2024-01-23 19:49:19 - Stopping process 6816
+2024-01-23 19:49:19 - Send SIGINT 6816
+2024-01-23 19:49:19 - SIGINT to 6816 failed - Killing as fallback
+2024-01-23 19:49:19 - Stopping process 6584
+2024-01-23 19:49:19 - Send SIGINT 6584
+2024-01-23 19:49:19 - SIGINT to 6584 failed - Killing as fallback
+2024-01-23 19:49:19 - Stopping process 6804
+2024-01-23 19:49:19 - Send SIGINT 6804
+2024-01-23 19:49:19 - SIGINT to 6804 failed - Killing as fallback
+2024-01-23 19:49:19 - Finished alsaadapp.exe
+2024-01-23 19:49:20 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-23 19:49:20 - Started 18120
+2024-01-24 17:17:53 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-24 17:17:53 - Started 7144
+2024-01-24 17:51:15 - Stopping alsaadapp.exe
+2024-01-24 17:51:15 - ProcessKill 7144
+2024-01-24 17:51:16 - Found child process: 7156 Name: conhost.exe
+2024-01-24 17:51:16 - Found child process: 7488 Name: node.exe
+2024-01-24 17:51:16 - Stopping process 7156
+2024-01-24 17:51:16 - Send SIGINT 7156
+2024-01-24 17:51:16 - SIGINT to 7156 failed - Killing as fallback
+2024-01-24 17:51:16 - Stopping process 7488
+2024-01-24 17:51:16 - Send SIGINT 7488
+2024-01-24 17:51:16 - SIGINT to 7488 failed - Killing as fallback
+2024-01-24 17:51:16 - Stopping process 7144
+2024-01-24 17:51:16 - Send SIGINT 7144
+2024-01-24 17:51:16 - SIGINT to 7144 failed - Killing as fallback
+2024-01-24 17:51:16 - Finished alsaadapp.exe
+                                                                                                                                                                                                                                                                                                                                                                                                                  2024-01-24 22:19:34 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-24 22:19:34 - Started 6388
+2024-01-26 17:03:27 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-26 17:03:27 - Started 6988
+2024-01-26 17:58:50 - Stopping alsaadapp.exe
+2024-01-26 17:58:50 - ProcessKill 6988
+2024-01-26 17:58:50 - Found child process: 6996 Name: conhost.exe
+2024-01-26 17:58:50 - Found child process: 1640 Name: node.exe
+2024-01-26 17:58:50 - Stopping process 6996
+2024-01-26 17:58:50 - Send SIGINT 6996
+2024-01-26 17:58:50 - SIGINT to 6996 failed - Killing as fallback
+2024-01-26 17:58:50 - Stopping process 1640
+2024-01-26 17:58:50 - Send SIGINT 1640
+2024-01-26 17:58:50 - SIGINT to 1640 failed - Killing as fallback
+2024-01-26 17:58:50 - Stopping process 6988
+2024-01-26 17:58:51 - Send SIGINT 6988
+2024-01-26 17:58:51 - SIGINT to 6988 failed - Killing as fallback
+2024-01-26 17:58:51 - Finished alsaadapp.exe
+2024-01-27 07:34:55 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-27 07:34:55 - Started 6848
+2024-01-27 07:36:04 - Stopping alsaadapp.exe
+2024-01-27 07:36:04 - ProcessKill 6848
+2024-01-27 07:36:05 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-01-27 20:10:51 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-27 20:10:52 - Started 7672
+2024-01-28 17:26:07 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-28 17:26:07 - Started 7712
+2024-01-28 18:14:28 - Stopping alsaadapp.exe
+2024-01-28 18:14:28 - ProcessKill 7712
+2024-01-28 18:14:28 - Found child process: 7740 Name: conhost.exe
+2024-01-28 18:14:28 - Found child process: 7312 Name: node.exe
+2024-01-28 18:14:28 - Stopping process 7740
+2024-01-28 18:14:28 - Send SIGINT 7740
+2024-01-28 18:14:28 - SIGINT to 7740 failed - Killing as fallback
+2024-01-28 18:14:28 - Stopping process 7312
+2024-01-28 18:14:28 - Send SIGINT 7312
+2024-01-28 18:14:28 - SIGINT to 7312 failed - Killing as fallback
+2024-01-28 18:14:28 - Stopping process 7712
+2024-01-28 18:14:28 - Send SIGINT 7712
+2024-01-28 18:14:28 - SIGINT to 7712 failed - Killing as fallback
+2024-01-28 18:14:28 - Finished alsaadapp.exe
+2024-01-28 18:14:31 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-28 18:14:31 - Started 21876
+2024-01-28 18:15:06 - Stopping alsaadapp.exe
+2024-01-28 18:15:06 - ProcessKill 21876
+2024-01-28 18:15:06 - Found child process: 23416 Name: conhost.exe
+2024-01-28 18:15:06 - Found child process: 13824 Name: node.exe
+2024-01-28 18:15:06 - Stopping process 23416
+2024-01-28 18:15:06 - Send SIGINT 23416
+2024-01-28 18:15:06 - SIGINT to 23416 failed - Killing as fallback
+2024-01-28 18:15:06 - Stopping process 13824
+2024-01-28 18:15:06 - Send SIGINT 13824
+2024-01-28 18:15:06 - SIGINT to 13824 failed - Killing as fallback
+2024-01-28 18:15:06 - Stopping process 21876
+2024-01-28 18:15:06 - Send SIGINT 21876
+2024-01-28 18:15:06 - SIGINT to 21876 failed - Killing as fallback
+2024-01-28 18:15:06 - Finished alsaadapp.exe
+2024-01-28 20:33:41 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-28 20:33:41 - Started 18712
+2024-01-28 21:58:36 - Stopping alsaadapp.exe
+2024-01-28 21:58:36 - ProcessKill 18712
+2024-01-28 21:58:36 - Found child process: 26600 Name: conhost.exe
+2024-01-28 21:58:36 - Found child process: 26060 Name: node.exe
+2024-01-28 21:58:36 - Stopping process 26600
+2024-01-28 21:58:36 - Send SIGINT 26600
+2024-01-28 21:58:36 - SIGINT to 26600 failed - Killing as fallback
+2024-01-28 21:58:36 - Stopping process 26060
+2024-01-28 21:58:36 - Send SIGINT 26060
+2024-01-28 21:58:36 - SIGINT to 26060 failed - Killing as fallback
+2024-01-28 21:58:36 - Stopping process 18712
+2024-01-28 21:58:36 - Send SIGINT 18712
+2024-01-28 21:58:36 - SIGINT to 18712 failed - Killing as fallback
+2024-01-28 21:58:36 - Finished alsaadapp.exe
+2024-01-28 21:59:16 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-28 21:59:16 - Started 24704
+2024-01-29 16:50:01 - Stopping alsaadapp.exe
+2024-01-29 16:50:01 - ProcessKill 24704
+2024-01-29 16:50:02 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-01-29 16:50:46 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-29 16:50:46 - Started 7576
+2024-01-29 22:59:20 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-29 22:59:21 - Started 6560
+2024-02-13 18:02:39 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-02-13 18:02:39 - Started 6692
+2024-02-13 19:21:41 - Stopping alsaadapp.exe
+2024-02-13 19:21:41 - ProcessKill 6692
+2024-02-13 19:21:41 - Found child process: 7072 Name: conhost.exe
+2024-02-13 19:21:41 - Found child process: 8 Name: node.exe
+2024-02-13 19:21:41 - Stopping process 7072
+2024-02-13 19:21:41 - Send SIGINT 7072
+2024-02-13 19:21:41 - SIGINT to 7072 failed - Killing as fallback
+2024-02-13 19:21:41 - Stopping process 8
+2024-02-13 19:21:41 - Send SIGINT 8
+2024-02-13 19:21:41 - SIGINT to 8 failed - Killing as fallback
+2024-02-13 19:21:41 - Stopping process 6692
+2024-02-13 19:21:41 - Send SIGINT 6692
+2024-02-13 19:21:41 - SIGINT to 6692 failed - Killing as fallback
+2024-02-13 19:21:41 - Finished alsaadapp.exe
+2024-02-14 14:01:05 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-02-14 14:01:05 - Started 7500
+2024-02-14 18:18:21 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-02-14 18:18:21 - Started 6920
+2024-02-16 17:43:42 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-02-16 17:43:42 - Started 7228
+2024-02-16 18:08:30 - Stopping alsaadapp.exe
+2024-02-16 18:08:30 - ProcessKill 7228
+2024-02-16 18:08:31 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-02-16 18:09:13 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-02-16 18:09:13 - Started 7492
+2024-02-16 21:33:02 - Stopping alsaadapp.exe
+2024-02-16 21:33:02 - ProcessKill 7492
+2024-02-16 21:33:02 - Found child process: 7504 Name: conhost.exe
+2024-02-16 21:33:02 - Found child process: 7216 Name: node.exe
+2024-02-16 21:33:02 - Stopping process 7504
+2024-02-16 21:33:02 - Send SIGINT 7504
+2024-02-16 21:33:02 - SIGINT to 7504 failed - Killing as fallback
+2024-02-16 21:33:02 - Stopping process 7216
+2024-02-16 21:33:02 - Send SIGINT 7216
+2024-02-16 21:33:02 - SIGINT to 7216 failed - Killing as fallback
+2024-02-16 21:33:02 - Stopping process 7492
+2024-02-16 21:33:02 - Send SIGINT 7492
+2024-02-16 21:33:02 - SIGINT to 7492 failed - Killing as fallback
+2024-02-16 21:33:02 - Finished alsaadapp.exe
+2024-02-17 02:08:03 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-02-17 02:08:03 - Started 6008
+2024-02-17 02:13:28 - Stopping alsaadapp.exe
+2024-02-17 02:13:28 - ProcessKill 6008
+2024-02-17 02:13:29 - Found child process: 4140 Name: conhost.exe
+2024-02-17 02:13:29 - Found child process: 4892 Name: node.exe
+2024-02-17 02:13:29 - Stopping process 4140
+2024-02-17 02:13:29 - Send SIGINT 4140
+2024-02-17 02:13:29 - SIGINT to 4140 failed - Killing as fallback
+2024-02-17 02:13:29 - Stopping process 4892
+2024-02-17 02:13:29 - Send SIGINT 4892
+2024-02-17 02:13:29 - SIGINT to 4892 failed - Killing as fallback
+2024-02-17 02:13:29 - Stopping process 6008
+2024-02-17 02:13:29 - Send SIGINT 6008
+2024-02-17 02:13:29 - SIGINT to 6008 failed - Killing as fallback
+2024-02-17 02:13:29 - Finished alsaadapp.exe
+2024-02-17 02:13:30 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-02-17 02:13:30 - Started 5748
+2024-02-17 02:17:07 - Stopping alsaadapp.exe
+2024-02-17 02:17:07 - ProcessKill 5748
+2024-02-17 02:17:07 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-02-17 02:17:52 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-02-17 02:17:52 - Started 7468
+2024-02-17 16:30:09 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-02-17 16:30:10 - Started 7176
+2024-02-17 20:13:14 - Stopping alsaadapp.exe
+2024-02-17 20:13:14 - ProcessKill 7176
+2024-02-17 20:13:14 - Found child process: 7184 Name: conhost.exe
+2024-02-17 20:13:14 - Found child process: 7532 Name: node.exe
+2024-02-17 20:13:14 - Stopping process 7184
+2024-02-17 20:13:14 - Send SIGINT 7184
+2024-02-17 20:13:14 - SIGINT to 7184 failed - Killing as fallback
+2024-02-17 20:13:14 - Stopping process 7532
+2024-02-17 20:13:14 - Send SIGINT 7532
+2024-02-17 20:13:14 - SIGINT to 7532 failed - Killing as fallback
+2024-02-17 20:13:14 - Stopping process 7176
+2024-02-17 20:13:14 - Send SIGINT 7176
+2024-02-17 20:13:14 - SIGINT to 7176 failed - Killing as fallback
+2024-02-17 20:13:14 - Finished alsaadapp.exe
+2024-02-17 20:13:15 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-02-17 20:13:15 - Started 9328
+2024-02-17 20:13:18 - Stopping alsaadapp.exe
+2024-02-17 20:13:18 - ProcessKill 9328
+2024-02-17 20:13:18 - Found child process: 23444 Name: conhost.exe
+2024-02-17 20:13:18 - Found child process: 25240 Name: node.exe
+2024-02-17 20:13:18 - Stopping process 23444
+2024-02-17 20:13:18 - Send SIGINT 23444
+2024-02-17 20:13:18 - SIGINT to 23444 failed - Killing as fallback
+2024-02-17 20:13:19 - Stopping process 25240
+2024-02-17 20:13:19 - Send SIGINT 25240
+2024-02-17 20:13:19 - SIGINT to 25240 failed - Killing as fallback
+2024-02-17 20:13:19 - Stopping process 9328
+2024-02-17 20:13:19 - Send SIGINT 9328
+2024-02-17 20:13:19 - SIGINT to 9328 failed - Killing as fallback
+2024-02-17 20:13:19 - Finished alsaadapp.exe
+2024-02-17 21:18:18 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-02-17 21:18:18 - Started 7072
+2024-02-17 21:18:58 - Stopping alsaadapp.exe
+2024-02-17 21:18:58 - ProcessKill 7072
+2024-02-17 21:18:58 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-03-11 16:40:33 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-03-11 16:40:33 - Started 7908
+2024-03-11 22:16:54 - Stopping alsaadapp.exe
+2024-03-11 22:16:54 - ProcessKill 7908
+2024-03-11 22:16:54 - Found child process: 7924 Name: conhost.exe
+2024-03-11 22:16:54 - Found child process: 6904 Name: node.exe
+2024-03-11 22:16:54 - Stopping process 7924
+2024-03-11 22:16:54 - Send SIGINT 7924
+2024-03-11 22:16:54 - SIGINT to 7924 failed - Killing as fallback
+2024-03-11 22:16:54 - Stopping process 6904
+2024-03-11 22:16:54 - Send SIGINT 6904
+2024-03-11 22:16:54 - SIGINT to 6904 failed - Killing as fallback
+2024-03-11 22:16:54 - Stopping process 7908
+2024-03-11 22:16:54 - Send SIGINT 7908
+2024-03-11 22:16:54 - SIGINT to 7908 failed - Killing as fallback
+2024-03-11 22:16:54 - Finished alsaadapp.exe
+2024-03-11 22:16:55 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-03-11 22:16:55 - Started 33268
+2024-03-11 22:17:47 - Stopping alsaadapp.exe
+2024-03-11 22:17:47 - ProcessKill 33268
+2024-03-11 22:17:47 - Found child process: 18100 Name: conhost.exe
+2024-03-11 22:17:47 - Found child process: 58184 Name: node.exe
+2024-03-11 22:17:47 - Stopping process 18100
+2024-03-11 22:17:47 - Send SIGINT 18100
+2024-03-11 22:17:47 - SIGINT to 18100 failed - Killing as fallback
+2024-03-11 22:17:47 - Stopping process 58184
+2024-03-11 22:17:47 - Send SIGINT 58184
+2024-03-11 22:17:47 - SIGINT to 58184 failed - Killing as fallback
+2024-03-11 22:17:47 - Stopping process 33268
+2024-03-11 22:17:47 - Send SIGINT 33268
+2024-03-11 22:17:47 - SIGINT to 33268 failed - Killing as fallback
+2024-03-11 22:17:47 - Finished alsaadapp.exe
+2024-03-12 14:21:56 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-03-12 14:21:56 - Started 7332
+2024-03-12 14:23:23 - Stopping alsaadapp.exe
+2024-03-12 14:23:23 - ProcessKill 7332
+2024-03-12 14:23:24 - Found child process: 7356 Name: conhost.exe
+2024-03-12 14:23:24 - Found child process: 7348 Name: node.exe
+2024-03-12 14:23:24 - Stopping process 7356
+2024-03-12 14:23:24 - Send SIGINT 7356
+2024-03-12 14:23:24 - SIGINT to 7356 failed - Killing as fallback
+2024-03-12 14:23:24 - Stopping process 7348
+2024-03-12 14:23:24 - Send SIGINT 7348
+2024-03-12 14:23:24 - SIGINT to 7348 failed - Killing as fallback
+2024-03-12 14:23:24 - Stopping process 7332
+2024-03-12 14:23:24 - Send SIGINT 7332
+2024-03-12 14:23:24 - SIGINT to 7332 failed - Killing as fallback
+2024-03-12 14:23:24 - Finished alsaadapp.exe
+2024-03-16 00:14:17 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-03-16 00:14:18 - Started 6464
+2024-03-16 00:15:31 - Stopping alsaadapp.exe
+2024-03-16 00:15:31 - ProcessKill 6464
+2024-03-16 00:15:31 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-03-16 14:06:46 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\anass\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "D:\Projects\Programming\NodeJS\Alsaad Mall\server.js" --scriptoptions= --log "Alsaad App wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-03-16 14:06:46 - Started 6708

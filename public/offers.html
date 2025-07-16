@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>العروض المتاحة</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <link rel="stylesheet" href="/css/offers.css" />
+    <style>
+      /* Custom CSS styles */
+      .offer-card {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body class="text-right">
+    <div class="container mt-5">
+      <h1 class="text-center">العروض المتاحة</h1>
+      <p id="offerNotFound" class="text-center mt-5 d-none">
+        لا يوجد أي عروض في الوقت الحالي
+      </p>
+      <div class="row justify-content-between" id="offer-list">
+        <!-- Offers will be added dynamically here -->
+      </div>
+    </div>
+
+    <!-- Admin and Cashier Actions (Hidden by Default) -->
+    <div
+      id="admin-actions"
+      style="display: none; text-align: center; margin-bottom: 10px"
+    >
+      <div
+        class="container"
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+        "
+      >
+        <a class="btn btn-primary d-inline-block" href="/offers/create-offer"
+          >إضافة عرض جديد</a
+        >
+        <a class="btn btn-success d-inline-block disabled" id="edit-offer"
+          >تعديل العرض</a
+        >
+        <button id="remove-offers" class="btn btn-danger">
+          حذف العروض (0)
+        </button>
+      </div>
+    </div>
+    <!-- Bootstrap and jQuery scripts -->
+    <script src="/js/jquery.js"></script>
+    <script src="/js/offers.js"></script>
+    <script src="/js/popper.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/all.min.js"></script>
+  </body>
+</html>

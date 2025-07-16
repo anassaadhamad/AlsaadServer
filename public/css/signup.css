@@ -1,0 +1,70 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set up background styles */
+body {
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Style the container */
+.container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  width: 350px;
+}
+
+/* Style the form */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style form elements */
+.input-group {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.input-group label {
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
+
+.input-group input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.btn-signup {
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn-signup:hover {
+  background: #0056b3;
+}

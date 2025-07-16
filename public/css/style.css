@@ -1,0 +1,403 @@
+@font-face {
+  font-family: "Cairo";
+  src: url("../webfonts/Cairo-VariableFont_slnt,wght.ttf") format("truetype"); /* Adjust format to 'truetype' */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Default styles */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Cairo", "Open Sans", sans-serif;
+  line-height: 1.25;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+}
+
+/* @media screen and (min-width: 992px) {
+  body {
+    display: block;
+  }
+} */
+
+main {
+  flex: 1;
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+nav #helloMessage {
+  direction: rtl;
+  font-weight: 600;
+}
+
+nav .logout {
+  align-items: center;
+}
+
+table.table {
+  text-align: center;
+}
+
+.table thead th {
+  border-right: 1px dashed #dee2e6; /* Add vertical line */
+  font-size: 0.8em;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fafafa;
+}
+
+.table tbody td {
+  border-right: 1px dashed #dee2e6; /* Add vertical line */
+  font-size: 0.8em;
+}
+
+table.search-table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.search-table caption {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+}
+
+table.search-table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+
+table.search-table th,
+table.search-table td {
+  padding: 0.625em;
+  text-align: center;
+}
+
+table.search-table th {
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+table.search-table tbody td[data-label="سعر البيع"],
+table.search-table tbody td[data-label="السعر بعد الخصم"] {
+  color: green;
+  font-weight: bold;
+}
+
+table.search-table tbody td[data-label="السعر قبل الخصم"] {
+  color: red;
+  font-weight: bold;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.quantity-btn {
+  flex: 0 0 auto;
+}
+
+.quantity-btn:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: initial;
+  color: #6c757d;
+}
+
+@media screen and (max-width: 600px) {
+  table.search-table {
+    border: 0;
+    flex: 1;
+    overflow: auto;
+    direction: rtl;
+  }
+
+  table.search-table caption {
+    display: none;
+  }
+
+  table.search-table thead {
+    display: none;
+  }
+
+  table.search-table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  table.search-table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.7em;
+    text-align: left;
+  }
+
+  table.search-table td::before {
+    content: attr(data-label);
+    float: right;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table.search-table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+.inventory,
+.notes {
+  display: table-cell;
+}
+
+/* Define a custom style for the delete button */
+.delete-product {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Define a style when hovering over the delete button */
+.delete-product:hover {
+  background-color: darkred;
+}
+
+input.input100 {
+  height: 40px;
+}
+
+.input100 {
+  display: block;
+  width: 100%;
+  background: 0 0;
+  font-family: Poppins-Medium;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.2;
+  padding: 0 5px;
+}
+
+input {
+  outline: none;
+  border: none;
+  overflow: visible;
+  margin: 0;
+  touch-action: manipulation;
+  direction: rtl;
+}
+
+/* GENERAL KEYBOARD STYLE */
+#keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  background: #f0f0f3;
+  border-radius: 16px;
+  padding: 15px;
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+}
+
+/* SHOW STATE */
+#keyboard.show {
+  transform: translate(-50%, 0);
+}
+
+/* ROW STYLING */
+.keyboard-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+
+/* KEY STYLING */
+.key {
+  padding: 14px 18px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #333;
+  cursor: pointer;
+  min-width: 45px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+  user-select: none;
+  flex-grow: 1;
+  max-width: 60px;
+}
+
+.key:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+.key:active {
+  background-color: #d0d0d0;
+  transform: scale(0.98);
+}
+
+/* ACTION KEYS DIFFERENT STYLE */
+.key.action {
+  background-color: #d9ecff;
+  color: #005f99;
+  font-weight: bold;
+}
+
+.key.action:hover {
+  background-color: #c2e1ff;
+}
+
+/* TOGGLE BUTTON */
+.keyboard-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* المكان الافتراضي */
+  font-size: 28px;
+  background: #fff;
+  color: #333;
+  padding: 10px 12px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+  transition: none;
+}
+
+.keyboard-showing {
+  /* transform: translateY(-100%); */
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+  #keyboard {
+    width: 100%;
+    left: 0;
+    transform: translateY(100%);
+  }
+
+  #keyboard.show {
+    transform: translateY(0);
+  }
+
+  .key {
+    font-size: 16px;
+    min-width: 40px;
+  }
+
+  .keyboard-icon {
+    transition: left 0.1s ease, top 0.1s ease;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  #keyboard {
+    height: 30vh;
+    overflow-y: auto;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+form label {
+  background-color: #00a800;
+  color: white;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  width: 100px;
+  margin: 10px auto 4px auto;
+}
+
+form input:last-of-type {
+  border-radius: 7px;
+  background-color: #00a800;
+  color: #fff;
+  font-weight: bold;
+}
+
+form span {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+form input:last-of-type {
+  display: block;
+  padding: 5px;
+  margin-bottom: 10px;
+  display: block;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  background-color: #00a800;
+  color: #fff;
+  font-weight: bold;
+  width: 100px;
+  margin: 10px auto;
+}
+
+footer {
+  font-weight: bold;
+  text-align: center;
+  margin-top: auto;
+  padding: 10px;
+  background-color: #f8f9fa;
+}
+
+footer a {
+  color: #dc3545;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
