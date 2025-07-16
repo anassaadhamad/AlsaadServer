@@ -115,6 +115,94 @@
                 </div>
               </div>
             </div>
+
+            <!-- Delete Database Confirmation Modal -->
+            <div
+              class="modal fade"
+              id="deleteDbModal"
+              tabindex="-1"
+              aria-labelledby="deleteDbModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="deleteDbModalLabel">
+                      تأكيد حذف قاعدة البيانات
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="alert alert-danger">
+                      <i class="fas fa-exclamation-triangle me-2"></i>
+                      <strong>تحذير!</strong>
+                      هذا الإجراء سيؤدي إلى حذف جميع بيانات قاعدة البيانات
+                      نهائياً!
+                    </div>
+                    <p>هل أنت متأكد أنك تريد المتابعة؟</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      إلغاء
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      id="confirmDeleteDbBtn"
+                    >
+                      <i class="fas fa-trash me-2"></i>
+                      نعم، احذف
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Feedback Modal -->
+            <div
+              class="modal fade"
+              id="feedbackModal"
+              tabindex="-1"
+              aria-labelledby="feedbackModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-center">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="feedbackModalLabel">
+                      نتيجة العملية
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body" id="feedbackModalBody">
+                    <!-- يتم ملؤه من جافاسكربت -->
+                  </div>
+                  <div class="modal-footer justify-content-center">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      حسنًا
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -386,6 +474,8 @@
           <div class="key" data-key="3">3</div>
           <div class="key" data-key="4">4</div>
           <div class="key" data-key="5">5</div>
+        </div>
+        <div class="keyboard-row">
           <div class="key" data-key="6">6</div>
           <div class="key" data-key="7">7</div>
           <div class="key" data-key="8">8</div>
@@ -460,8 +550,8 @@
     <script src="/js/historyTable.js"></script>
     <script src="/js/handleUpload.js"></script>
     <script src="/js/logout.js"></script>
-    <script src="/js/popper.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
     <script src="/js/all.min.js"></script>
   </body>
 </html>

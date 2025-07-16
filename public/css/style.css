@@ -262,7 +262,7 @@ input {
   transition: all 0.2s ease;
   user-select: none;
   flex-grow: 1;
-  max-width: 60px;
+  /* max-width: 60px; */
 }
 
 .key:hover {

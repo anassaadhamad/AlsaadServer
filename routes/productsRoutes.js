@@ -38,6 +38,13 @@ router.post(
   productController.importProducts
 );
 
+router.delete(
+  "/removeAllProducts",
+  authController.protect,
+  authController.restrictTo("admin", "cashier"),
+  productController.removeAllProducts
+);
+
 router.post("/downloadExcel", productController.downloadExcelMiddleware);
 
 // router.route("/uploadProducts").post(productController.uploadProducts);

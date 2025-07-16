@@ -81,16 +81,23 @@ const keyboard = document.getElementById("keyboard");
 let isDragging = false;
 let offset = { x: 0, y: 0 };
 
-// 🧠 Helper: تثبيت على أقرب جانب
 function snapToSide(x, y, element) {
   const iconWidth = element.offsetWidth;
   const iconHeight = element.offsetHeight;
   const screenWidth = window.innerWidth;
   const screenHeight = window.innerHeight;
 
+  const margin = 20; // الهامش من جميع الجهات
   const middleX = screenWidth / 2;
-  const snapX = x < middleX ? 0 : screenWidth - iconWidth;
-  const snapY = Math.min(Math.max(0, y), screenHeight - iconHeight);
+
+  // Snap أفقياً
+  const snapX = x < middleX ? margin : screenWidth - iconWidth - margin;
+
+  // Snap عمودياً مع ترك هامش علوي وسفلي
+  const snapY = Math.min(
+    Math.max(margin, y),
+    screenHeight - iconHeight - margin
+  );
 
   return { x: snapX, y: snapY };
 }

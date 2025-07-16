@@ -534,6 +534,64 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+// Function to remove all products from database
+async function removeAllProducts() {
+  const modalEl = document.getElementById("feedbackModal");
+  const modalBody = document.getElementById("feedbackModalBody");
+  const modal = bootstrap.Modal.getOrCreateInstance(modalEl);
+
+  try {
+    const response = await fetch("/api/v1/products/removeAllProducts", {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    if (response.ok) {
+      const result = await response.json();
+      modalBody.innerHTML =
+        '<div class="alert alert-success">✅ تم حذف جميع المنتجات من قاعدة البيانات بنجاح</div>';
+      modal.show();
+
+      // اختياري: إعادة تحميل الصفحة بعد 2.5 ثانية
+      setTimeout(() => location.reload(), 2500);
+    } else {
+      const error = await response.json();
+      modalBody.innerHTML =
+        '<div class="alert alert-danger">❌ حدث خطأ أثناء الحذف: ' +
+        (error.message || "خطأ غير معروف") +
+        "</div>";
+      modal.show();
+    }
+  } catch (error) {
+    console.error("Error removing all products:", error);
+    modalBody.innerHTML =
+      '<div class="alert alert-danger">⚠️ حدث خطأ أثناء الاتصال بالخادم</div>';
+    modal.show();
+  }
+}
+
+// Handle delete database button - show confirmation modal instead of direct deletion
+fileLabel.addEventListener("click", (e) => {
+  e.preventDefault();
+  const deleteModal = new bootstrap.Modal(
+    document.getElementById("deleteDbModal")
+  );
+  deleteModal.show();
+});
+
+// Handle the confirmation button in the delete modal
+document.getElementById("confirmDeleteDbBtn").addEventListener("click", () => {
+  const deleteModal = bootstrap.Modal.getInstance(
+    document.getElementById("deleteDbModal")
+  );
+  deleteModal.hide();
+
+  // Now execute the actual delete function
+  removeAllProducts();
+});
+
 // Add event listener for showing the tooltip on the warning icon
 document.addEventListener("DOMContentLoaded", function () {
   const dangerIcon = document.querySelector(".fa-exclamation-circle");
