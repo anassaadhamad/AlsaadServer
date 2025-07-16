@@ -54,16 +54,6 @@ function hideOrShowElements(userRole) {
   }
 }
 
-// Add change event listeners once when the page loads
-fileInput.addEventListener("change", () => {
-  if (fileInput.files.length > 0) {
-    forms[0].submit();
-    const uploadMessage = document.getElementById("uploadMessage");
-    uploadMessage.innerText = "Deleting Database...";
-    uploadMessage.style.display = "block";
-  }
-});
-
 fileInput2.addEventListener("change", () => {
   if (fileInput2.files.length > 0) {
     forms[1].submit();
