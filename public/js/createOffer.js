@@ -48,7 +48,7 @@ function getDefaultImageURL(category) {
     case "المفروشات":
       return imageUrl + "image1.jpg";
     case "الأدوات المنزلية":
-      return imageUrl + "image2.jpg";
+      return imageUrl + "image2.png";
     // Add more cases for other categories with their default image URLs
     default:
       return imageUrl + "logo_gold.png"; // Default URL for unknown categories
