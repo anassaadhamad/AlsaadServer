@@ -30,12 +30,6 @@
       .modal-body {
         text-align: center;
       }
-      #clearAllBtn {
-        margin: 10px auto;
-        border: none;
-        border-radius: 5px;
-        display: block;
-      }
     </style>
   </head>
   <body class="w-100 m-0">
@@ -423,16 +417,15 @@
           </div>
         </div>
 
-        <!-- Add an empty modal for confirmation -->
+        <!-- Modal Confirm Delete -->
         <div
           class="modal fade"
           id="confirmationModal"
           tabindex="-1"
-          role="dialog"
           aria-labelledby="confirmationModalLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="confirmationModalLabel">
@@ -440,19 +433,17 @@
                 </h5>
                 <button
                   type="button"
-                  class="close"
-                  data-dismiss="modal"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
                   aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
+                ></button>
               </div>
               <div class="modal-body">هل أنت متأكد أنك تريد حذف الفاتورة؟</div>
               <div class="modal-footer">
                 <button
                   type="button"
                   class="btn btn-secondary"
-                  data-dismiss="modal"
+                  data-bs-dismiss="modal"
                 >
                   إلغاء
                 </button>
@@ -468,53 +459,31 @@
           </div>
         </div>
 
-        <div
-          class="buttons"
-          style="margin: 0px auto; display: flex; gap: 15px; flex-wrap: wrap"
-        >
+        <div class="buttons d-flex flex-wrap justify-content-center gap-3 my-4">
           <button
             id="clearAllBtn"
-            style="
-              margin: 10px auto;
-              border: none;
-              border-radius: 5px;
-              cursor: pointer;
-              flex-grow: 1;
-            "
-            class="bg-danger text-white p-2"
-            data-toggle="modal"
-            data-target="#confirmationModal"
+            class="btn btn-danger d-flex align-items-center justify-content-center gap-2 px-4 py-2 rounded-3 shadow-sm flex-grow-1"
+            data-bs-toggle="modal"
+            data-bs-target="#confirmationModal"
           >
-            <span class="d-none d-lg-inline">حذف الفاتورة</span>
             <i class="fas fa-trash-alt"></i>
+            <span>حذف الفاتورة</span>
           </button>
+
           <button
             id="printInvoiceBtn"
-            style="
-              margin: 10px auto;
-              border: none;
-              border-radius: 5px;
-              cursor: pointer;
-              flex-grow: 1;
-            "
-            class="bg-primary text-white p-2"
+            class="btn btn-primary d-flex align-items-center justify-content-center gap-2 px-4 py-2 rounded-3 shadow-sm flex-grow-1"
           >
-            <span class="d-none d-lg-inline">طباعة الفاتورة</span>
             <i class="fas fa-print"></i>
+            <span>طباعة الفاتورة</span>
           </button>
+
           <button
             id="downloadExcelBtn"
-            style="
-              margin: 10px auto;
-              border: none;
-              border-radius: 5px;
-              cursor: pointer;
-              flex-grow: 1;
-            "
-            class="bg-success text-white p-2"
+            class="btn btn-success d-flex align-items-center justify-content-center gap-2 px-4 py-2 rounded-3 shadow-sm flex-grow-1"
           >
-            <span class="d-none d-lg-inline">تحميل الفاتورة</span>
             <i class="fas fa-download"></i>
+            <span>تحميل الفاتورة</span>
           </button>
         </div>
       </div>
@@ -599,10 +568,7 @@
     <footer class="text-center" style="font-weight: bold; font-size: 0.8em">
       <span
         >&copy;تصميم وبرمجة
-        <a
-          href="https://facebook.com/anassaadhamad"
-          target="_blank"
-          class="text-danger"
+        <a href="https://anas.works" target="_blank" class="text-danger"
           >أنس حمد</a
         ></span
       >
@@ -615,7 +581,6 @@
     <script src="/js/handleUpload.js"></script>
     <script src="/js/logout.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-
     <script src="/js/all.min.js"></script>
   </body>
 </html>

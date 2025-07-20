@@ -8,6 +8,15 @@ document.addEventListener("DOMContentLoaded", () => {
   );
   const errorModal = new bootstrap.Modal(document.getElementById("errorModal"));
 
+  // Check user role to determine if selection circles should be enabled for expired offers
+  let userRole = null;
+  getUserRole().then((role) => {
+    userRole = role;
+    if (userRole === "admin" || userRole === "cashier") {
+      $("#admin-actions").removeClass("d-none").addClass("d-block");
+    }
+  });
+
   fetch("/api/v1/offers")
     .then((response) => response.json())
     .then((data) => {
@@ -50,6 +59,9 @@ document.addEventListener("DOMContentLoaded", () => {
           `#${offerCardId} .countdown-bar`
         );
         const offerCard = document.querySelector(`#${offerCardId}`);
+        const expiredOverlay = document.querySelector(
+          `#${offerCardId} .expired-overlay`
+        );
 
         if (timeRemaining <= 0) {
           // Offer has expired
@@ -61,11 +73,17 @@ document.addEventListener("DOMContentLoaded", () => {
           if (offerCard) {
             offerCard.classList.add("expired");
           }
+          if (expiredOverlay) {
+            expiredOverlay.classList.remove("d-none"); // Ensure overlay is visible
+          }
           return null;
         } else {
           // Offer is still active
           const formattedTimeRemaining = formatTimeRemaining(timeRemaining);
           timeRemainingElement.textContent = formattedTimeRemaining;
+          if (expiredOverlay) {
+            expiredOverlay.classList.add("d-none"); // Ensure overlay is hidden
+          }
           return formattedTimeRemaining;
         }
       }
@@ -188,11 +206,14 @@ document.addEventListener("DOMContentLoaded", () => {
             updateCountdownBar(offer);
           }, 1000);
 
-          // Add click event to the selection circle (only if not expired)
-          if (!isExpired) {
-            const selectionCircle = document.querySelector(
-              `#${offerCardId} .selection-circle`
-            );
+          // Add click event to the selection circle (enable for admins/cashiers even if expired)
+          const selectionCircle = document.querySelector(
+            `#${offerCardId} .selection-circle`
+          );
+          if (
+            selectionCircle &&
+            (userRole === "admin" || userRole === "cashier" || !isExpired)
+          ) {
             selectionCircle.addEventListener("click", () => {
               toggleOfferSelection(offer._id, offerCardId);
             });
@@ -215,13 +236,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Add event listener for the "Remove Offers" button
   removeOffersButton.addEventListener("click", () => {
     removeSelectedOffers();
-  });
-
-  // Check user role to show admin actions
-  getUserRole().then((userRole) => {
-    if (userRole === "admin" || userRole === "cashier") {
-      $("#admin-actions").removeClass("d-none").addClass("d-block");
-    }
   });
 
   // Add event listener for the "Edit Offer" button

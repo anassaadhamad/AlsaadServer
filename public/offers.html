@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>العروض المتاحة</title>
+    <title>العروض</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,32 +16,84 @@
       href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/offers.css" />
   </head>
   <body>
-    <div class="container mt-5">
-      <h1 class="text-center mb-5">العروض المتاحة</h1>
-      <p id="offerNotFound" class="text-center mt-5 d-none fs-4 text-muted">
-        لا يوجد أي عروض في الوقت الحالي
-      </p>
-      <!-- Admin and Cashier Actions -->
-      <div id="admin-actions" class="d-none mb-5 text-center">
-        <div class="d-flex flex-wrap justify-content-center gap-3">
-          <a class="btn btn-primary" href="/offers/create-offer"
-            >إضافة عرض جديد</a
-          >
-          <a class="btn btn-success disabled" id="edit-offer">تعديل العرض</a>
-          <button id="remove-offers" class="btn btn-danger">
-            حذف العروض (0)
-          </button>
+    <!-- Navbar from index.html -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="images/slogan.png" alt="Logo" height="30" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="تبديل التنقل"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-nav" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <span id="helloMessage" style="display: none"></span>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link logout d-none"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#logoutModal"
+              >
+                خروج
+                <i class="fas fa-sign-out-alt"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link login" href="/login">تسجيل الدخول</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/offers">آخر العروض</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link signup" href="/signup">التسجيل</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="row g-4" id="offer-list">
-        <!-- Offers will be added dynamically here -->
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5 pt-5">
+      <h1 class="text-center mb-5">العروض المتاحة</h1>
+      <div id="offerNotFound" class="alert alert-info d-none" role="alert">
+        لا يوجد أي عروض في الوقت الحالي
       </div>
+      <div
+        id="admin-actions"
+        class="d-none mb-4 d-flex gap-3 justify-content-center flex-wrap"
+      >
+        <a href="/offers/create-offer" class="btn btn-success"
+          >إضافة عرض جديد</a
+        >
+        <a
+          id="edit-offer"
+          href="javascript:void(0);"
+          class="btn btn-primary disabled"
+          >تعديل العرض</a
+        >
+        <button id="remove-offers" class="btn btn-danger" disabled>
+          حذف العروض (0)
+        </button>
+      </div>
+      <div id="offer-list" class="row g-4"></div>
     </div>
 
-    <!-- Success Modal for Deletion -->
+    <!-- Success Modal for Offer Deletion -->
     <div
       class="modal fade"
       id="successModal"
@@ -74,7 +126,7 @@
       </div>
     </div>
 
-    <!-- Error Modal for Deletion -->
+    <!-- Error Modal for Offer Deletion -->
     <div
       class="modal fade"
       id="errorModal"
@@ -109,10 +161,49 @@
       </div>
     </div>
 
+    <!-- Logout Confirmation Modal from index.html -->
+    <div
+      class="modal fade"
+      id="logoutModal"
+      tabindex="-1"
+      aria-labelledby="logoutModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="logoutModalLabel">
+              تأكيد تسجيل الخروج
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="إغلاق"
+            ></button>
+          </div>
+          <div class="modal-body">هل أنت متأكد أنك تريد تسجيل الخروج؟</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              إلغاء
+            </button>
+            <button type="button" class="btn btn-primary" id="confirmLogoutBtn">
+              تأكيد
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <script src="/js/offers.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/js/all.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/offers.js"></script>
   </body>
 </html>

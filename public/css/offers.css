@@ -101,6 +101,7 @@ h1 {
   position: absolute;
   top: 15px;
   left: 15px;
+  z-index: 15;
   cursor: pointer;
 }
 
@@ -116,6 +117,12 @@ h1 {
 
 .selection-circle:hover .selected-icon {
   transform: scale(1.1);
+}
+
+/* Ensure selection circle is clickable for admins/cashiers even on expired cards */
+.admin-actions-visible .card.expired .selection-circle {
+  pointer-events: auto;
+  z-index: 20; /* Ensure it appears above the overlay */
 }
 
 .product-detail-container {

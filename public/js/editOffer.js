@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const updateOfferData = async () => {
     const urlParams = new URLSearchParams(window.location.search);
     const offerId = urlParams.get("offerId");
-
+    console.log("Updating offer with ID:", offerId);
     const formData = new FormData(editOfferForm);
     const imageFile = formData.get("image");
     const hasNewImage = imageFile && imageFile.size > 0;
